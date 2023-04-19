@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyHome</title>
+    <meta name="description" content="Fast solutions for day-to-day problems. From broken windows to leaking water-heaters, MyHome makes you feel at home, without leaving it."> <!--Alguém que corriga o meu broken english, please-->
+    <!--Font Link-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!--CSS External File-->
+    <link rel="stylesheet" href="style.css">
+    <!--JavaScript External File-->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="homepage.html"><img src="#" alt="logo"></a><!--Meter Logo-->
+
+        <div class="buttons">
+            <button class="login">Login</button>
+            <button class="signUp">Sign Up</button>
+        </div>
+    </header>
+
+    <div class="login-container">
+        <div class="login-open">
+            <div class="login-header">
+                <h3>Login</h3>
+                <img src="images/icon-close.svg" alt="close" class="close">
+            </div>
+
+            <form action="POST">
+                <label for="username-id">Username</label>
+                <input type="text" name="username" id="username-id" placeholder="jane.doe23">
+                <!--Podia ter escrito username no id também, mas assim fica mais claro-->
+
+                <label for="password-id">Password</label>
+                <input type="password" name="password" id="password-id">
+                
+                <button type="submit">Login</button>
+
+                <span>I don't have an account <a href="#">Sign Up</a></span>
+            </form>
+        </div>
+    </div>
+
+    <div class="signUp-container">
+        <div class="signUp-open">
+            <div class="signUp-header">
+                <h3>Sign Up</h3>
+                <img src="images/icon-close.svg" alt="close" class="close">
+            </div>
+
+            <form action="POST">
+                <label for="username-id0">Username</label>
+                <input type="text" name="username" id="username-id0" placeholder="jane.doe23"> <!--Não podem existir 2 ids iguais-->
+
+                <label for="mail-id">E-mail Address</label>
+                <input type="email" name="mail" id="mail-id" placeholder="jane_doe@example.com">
+            
+                <label for="pass-id">Password</label>
+                <input type="password" name="pass" id="pass-id">
+
+                <label for="pass-validation-id">Confirm Password</label>
+                <input type="password" name="pass-validation" id="pass-validation-id">
+               
+                <button type="submit">Sign Up</button>
+
+                <span>I already have an account <a href="#">Login</a></span>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+/*CSS Reset*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background: url(images/bg_desktop.jpg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid #ff9405;
+    background-color: #ff9405;
+    color: white;
+    padding: .75em 1.75em;
+    border-radius: 12px;
+}
+
+button:hover{
+    border: 1px solid #e98400;
+    background-color: #e98400;
+}
+
+.buttons{
+    display: flex;
+    gap: 1em;
+}
+
+.login-container, .signUp-container{
+    height: 100%; /*dimensões relativas ao body*/
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute; /*remove do flow do documento*/
+    top: 0;
+    display: none; /*vamos escrever o código para mostrar/não mostrar, e JavaScript*/
+    align-items: center;
+    justify-content: center;
+}
+
+.login-open, .signUp-open{
+    min-height: 60%; /*min-height para se ajustar ao conteúdo*/
+    min-width: 30%;
+    background-color: white;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+}
+
+.login-header, .signUp-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.close{
+    cursor: pointer;
+    height: 1.5rem;
+}
+
+.close:hover{
+    filter: invert(67%) sepia(69%) saturate(5997%) hue-rotate(15deg) brightness(107%) contrast(101%); /* alterar a cor para #e98400, com 0.0 de loss */
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+input{
+    padding: 1.2em;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    border: 1px solid transparent;
+    border-radius: 12px;
+}
+
+input:hover{
+    border: 1px solid #ff9405;
+    /*NOTA: ao adicionar uma border de 1px, quando hover, se não existir uma border de 1px no normal state, o field vai, naturalmente, aumentar em tamanho. Por isso, adicionei uma border transparent no input*/
+}
+
+span{
+    font-size: .8rem;
+    text-align: center;
+}
+
+button[type="submit"]{ /*podia ter atribuído uma class ao button, mas para praticar, fiz assim*/
+    padding: 1em;
+    font-size: .9rem;
+}
+
+/*Tablet View*/
+@media(max-width: 768px){
+    
+}
+
+/*Mobile View*/
+@media(max-width: 375px){
+    
+}
